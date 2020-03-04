@@ -15,7 +15,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/lifecycle-plugin" />
+            <option value="$PROJECT_DIR$/firstplugin" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
