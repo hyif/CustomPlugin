@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.hyif.plugin.customplugin'
 
 android {
   compileSdkVersion 29
@@ -29,17 +30,17 @@ dependencies {
 }
 
 
-apply plugin: 'com.hyif.plugin.firstplugin'
-buildscript {
-  repositories {
-    maven {//本地Maven仓库地址
-      url uri('../repos')
-    }
-  }
-  dependencies {
-    //格式为-->group:module:version
-    classpath 'com.hyif.plugin:firstplugin:1.0.0'
-  }
-}
+//apply plugin: 'com.hyif.plugin.firstplugin'
+//buildscript {
+//  repositories {
+//    maven {//本地Maven仓库地址
+//      url uri('../repos')
+//    }
+//  }
+//  dependencies {
+//    //格式为-->group:module:version
+//    classpath 'com.hyif.plugin:firstplugin:1.0.0'
+//  }
+//}
 
 
