@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.hyif.plugin.customplugin'
-
+apply plugin: 'com.hujiang.android-aspectjx'
+apply plugin: 'com.jakewharton.hugo'
 android {
   compileSdkVersion 29
   buildToolsVersion "29.0.2"
@@ -29,7 +30,10 @@ dependencies {
   androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 }
 
-
+aspectjx {
+  //关闭AspectJX功能
+  enabled false
+}
 //apply plugin: 'com.hyif.plugin.firstplugin'
 //buildscript {
 //  repositories {

@@ -44,7 +44,7 @@ class CustomTransform extends Transform {
             transformInput.directoryInputs.each { DirectoryInput directoryInput ->
                 //文件夹里面包含的是我们手写的类以及R.class、BuildConfig.class以及R$XXX.class等
 //                MyInject.injectDir(directoryInput.file.absolutePath, "com\\example\\use_plugin")
-                System.out.println("directoryInput.name="+directoryInput.name)
+                System.out.println("directoryInput.file="+directoryInput.file)
                 // 获取output目录
                 def dest = outputProvider.getContentLocation(directoryInput.name,
                         directoryInput.contentTypes, directoryInput.scopes,
@@ -63,6 +63,7 @@ class CustomTransform extends Transform {
                 if (jarName.endsWith(".jar")) {
                     jarName = jarName.substring(0, jarName.length() - 4)
                 }
+                System.out.println("jarName="+jarName)
                 //生成输出路径
                 def dest = outputProvider.getContentLocation(jarName + md5Name,
                         jarInput.contentTypes, jarInput.scopes, Format.JAR)

@@ -7,7 +7,7 @@ import org.gradle.api.Project
 class CustomPlugin implements Plugin<Project> {
     @Override
     void apply(Project project) {
-        AppExtension appExtension = project.extensions.getByType(AppExtension.class);
-        appExtension.registerTransform(new CustomTransform(project))
+//        AppExtension appExtension = project.extensions.getByType(AppExtension.class);
+//        appExtension.registerTransform(new CustomTransform(project))
     }
 }
